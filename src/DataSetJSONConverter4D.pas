@@ -315,7 +315,7 @@ begin
         TFieldType.ftSingle, TFieldType.ftFloat:
           Result.AddPair(vKey, TJSONNumber.Create(pDataSet.Fields[I].AsFloat));
         ftString, ftWideString, ftMemo, ftWideMemo:
-          Result.AddPair(vKey, pDataSet.Fields[I].AsWideString);
+          Result.AddPair(vKey, pDataSet.Fields[I].AsString);
         TFieldType.ftDate:
           begin
             if not pDataSet.Fields[I].IsNull then
