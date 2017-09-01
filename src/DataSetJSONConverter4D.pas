@@ -13,7 +13,6 @@ uses
   Data.DBXJSONCommon;
 
 type
-
   EDataSetJSONConverterException = class(Exception);
 
   TBooleanFieldType = (bfUnknown, bfBoolean, bfInteger);
